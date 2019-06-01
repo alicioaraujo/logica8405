@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<h3>Álcool ou Gasolina?</h3>
+<script>
+var tanque = parseFloat(prompt("Insira a capacidade do tanque"));
+var caminhoComGasolina = parseFloat(prompt("Insira a distancia com gasolina"));
+var consumoDeGasolina = (caminhoComGasolina/tanque).toFixed(2);
+var caminhoComAlcool = parseFloat(prompt("Insira a distancia com álcool"));
+var consumoDeAlcool = (caminhoComAlcool/tanque).toFixed(2);
+var precoDaGasolina = parseFloat(prompt("Insira o valor do litro da gasolina"));
+var precoDoAlcool = parseFloat(prompt("Insira o valor do litro do álcool"));
+var precoPorKilometroGasolina =  (precoDaGasolina/consumoDeGasolina).toFixed(2);
+var precoPorKilometroAlcool = (precoDoAlcool/consumoDeAlcool).toFixed(2);
+alert("\n A média com gasolina é: " +consumoDeGasolina+ "\n A média com álcool é: "
++ consumoDeAlcool+"\n O preço por km com gasolina é: R$" + precoPorKilometroGasolina +
+"\n O preço por km com álcool é: R$" + precoPorKilometroAlcool)
+</script>
